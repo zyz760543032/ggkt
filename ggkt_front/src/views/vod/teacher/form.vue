@@ -57,7 +57,7 @@ export default {
             teacher: {
                 // 待添加讲师默认值
                 sort: 0,
-                level: 1,
+                level: 1
             },
             BASE_API: 'http://localhost:8301'
         }
@@ -65,7 +65,6 @@ export default {
     created () {
         // 判断url里有没有id，如果有，说明是修改操作
         if (this.$route.params.id) {
-
             this.fetchDataById(this.$route.params.id)
         }
     },

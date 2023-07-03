@@ -38,10 +38,17 @@
         <jwt.version>0.7.0</jwt.version>
         <xxl-job.version>2.3.0</xxl-job.version>
         <aliyun.oss.version>3.9.0</aliyun.oss.version>
+        <junit.version>3.8.1</junit.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
             <dependency>
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>

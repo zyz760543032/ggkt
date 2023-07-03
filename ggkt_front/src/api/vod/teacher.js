@@ -3,6 +3,13 @@ import request from '@/utils/request'
 const api_name = '/admin/vod/teacher'
 
 export default {
+    // 讲师所有查询
+    list () {
+        return request({
+            url: `${api_name}/findAll`,
+            method: 'get'
+        })
+    },
     // 讲师分页查询
     pageList (currentPage, pageSize, condition) {
         return request({

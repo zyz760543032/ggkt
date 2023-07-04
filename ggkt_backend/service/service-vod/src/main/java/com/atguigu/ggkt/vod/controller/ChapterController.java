@@ -69,5 +69,7 @@ public class ChapterController {
         chapterService.removeById(id);
         return Result.ok(null);
     }
+
+
 }
 

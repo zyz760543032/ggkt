@@ -138,6 +138,7 @@ export default {
         saveAndNext () {
             this.saveBtnDisabled = true
             if (!this.$parent.courseId) {
+                console.log("课程描述" + this.description)
                 this.saveData()
             } else {
                 this.updateData()
@@ -147,6 +148,7 @@ export default {
         fetchCourseInfoById (id) {
             courseApi.getCourseInfoById(id).then(response => {
                 this.courseInfo = response.data
+                console.log(this.courseInfo)
                 // 初始化分类列表
                 subjectApi.getChildList(0).then(response => {
                     this.subjectList = response.data
